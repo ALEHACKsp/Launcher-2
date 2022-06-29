@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="errors_functions.h">
+      <Filter>fronted</Filter>
+    </ClInclude>
+    <ClInclude Include="main_client.h">
+      <Filter>fronted</Filter>
+    </ClInclude>
+    <ClInclude Include="main_security.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="main_utils.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="client_auth.h">
+      <Filter>auth</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>resource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libcurl.lib">
+      <Filter>auth</Filter>
+    </Library>
+    <Library Include="library_x64.lib">
+      <Filter>auth</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="fronted">
+      <UniqueIdentifier>{29ad1ba9-e0fb-4818-ba33-beb0cb0f71b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backend">
+      <UniqueIdentifier>{8018f446-e4ae-4696-910f-50bb02dace76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="auth">
+      <UniqueIdentifier>{0e961770-1236-49cc-9355-3d62ba35d4d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{66707e68-38f3-4b2c-aed9-6c9f5389bd7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cordeguard.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
